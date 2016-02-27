@@ -7,3 +7,5 @@ Change 3
 Change 4 on remote
 
 Change 5 on local
+
+Change 6 again on remote GH
