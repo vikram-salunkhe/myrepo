@@ -1,0 +1,111 @@
+Change 1
+
+Change 2 --> CHANGE 2
+
+Change 3
+
+Change 4 on remote
+
+Change 5 on local
+
+Change 6 again on remote GH
+
+
+/* Git commands */
+
+1) git config --global user.name "vikram2890" //create user with name - configuration
+
+2) git config --global user.email "mail.vikram2890@gmail.com" //specify email - configuration
+
+3) git config user.name //see a current user - configuration
+
+4) git config --list //see all configurations - configuration
+
+5) git init //Initilize empty git repository
+
+6) git status //track only current change
+
+7) git add <filename.extension> //to add a particular file to staging area
+
+8) git add . //to add all files to staging area
+
+9) git add *.java //to add only all .java files to to staging area
+
+10) git commit -m "<message>"
+
+11) git log //track all changes 
+
+12) git log --oneline //one line messages
+
+13) git log --oneline -1 //only latest nessage
+
+14) git log --author="vikram2890" //changes made by a particular author
+
+15) git log --grep="<reg-expr>" //track changes based on message
+
+16) git log --until=dd-MM-yyyy //track changes upto specified date
+
+17) git log --since=dd-MM-yyyy //track changes from specified date
+
+18) git branch //See all branches and and current pointer on which branch
+
+19) git branch idea // create an idea branch
+
+20) git checkout idea // Move/switch pointer to idea branch
+
+21) git branch //Now see the pointer..it will be pointing to idea branch
+
+//Now modify the file..the file that will be modifying is on idea branch
+
+//To merge the changes back to master from idea branch:
+22) git checkout master // Move/switch to master
+
+
+23) git merge idea //Modified file will be merged to master branch
+
+//Make changes into file1
+24) git status
+
+25) git diff //To see the difference 
+
+
+26) git commit -am "<msg>" //both add and commit
+
+
+//::::: Interacting with remote Repo (GitHub Repo):::::
+
+//Add remote repo from GitHub
+27) git remote add origin <URL of repository> //URL: https://github.com/vikram2890/myrepo.git
+
+//Make the proxy (for proxy) configurations in bash:
+28) git config --global http.proxy http://<proxy_username>:<proxy_pwd_(%40 for @)>@hjproxy.persistent.co.in:8080
+
+//Change file on local
+
+29) git status
+
+30) git add . //add to staging area
+
+31) git commit -m <msg> //commit to local repo
+
+32) git push -u origin master
+
+//Check the changes now in GitHub repo
+
+//Modify the file on GitHub
+
+//To get the file on local machine
+33) git pull //Fetch + merge 
+
+//Now see the changes in local file
+
+
+
+
+
+
+
+
+
+
+
